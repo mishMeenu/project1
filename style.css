@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* padding: 20px; */
+}
+
+.left-section {
+    background-color: #282B6F;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 0 45% 45% 0;
+}
+
+.person-img {
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.right-section {
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: #2B2C47;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.sign-in-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF3C3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.sign-in-btn:hover {
+    background-color: #e62e2e;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 70px 50px 0;
+}
+
+a {
+    color: #2B2C47;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .person-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .input-field {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .sign-in-btn {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+}
